@@ -1,5 +1,9 @@
 
     const gifts=["Guadalupe", "Ollie", "Aki"];
+    beforeEach( () => {
+        spy = sinon.spy( console, 'log' );
+      } );
+
     function writeCards(){
         const response=[];
         let j;
